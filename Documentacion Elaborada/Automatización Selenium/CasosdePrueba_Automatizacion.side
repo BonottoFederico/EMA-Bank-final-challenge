@@ -1,0 +1,341 @@
+{
+  "id": "2fabcda9-f82c-48f2-90d7-3d9cc980ef99",
+  "version": "2.0",
+  "name": "EMABank",
+  "url": "https://homebanking-ema-production.up.railway.app/index.html",
+  "tests": [{
+    "id": "69759ce6-2d4d-4ee7-80fd-72ea99666608",
+    "name": "Verificar campo de E-mail vacío",
+    "commands": [{
+      "id": "7119e134-a6c8-427e-82fa-d838d0a408d6",
+      "comment": "",
+      "command": "open",
+      "target": "https://homebanking-ema-production.up.railway.app/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43534168-287c-4813-b752-2a68b38c5864",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ff86bd4-8f41-4fa0-bd22-c47432ed626d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12fc55f4-f487-401f-8a7d-8fff4361cd04",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "melva123"
+    }, {
+      "id": "17b94527-5c9f-4631-8faa-4f74a5d4525c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac3cae55-334a-4290-9c82-c16cf9c59d0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0906eef8-4357-48cd-9eca-8f882bc5589b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62a7d6e6-535e-4dac-ac15-9d1020cd9e39",
+    "name": "Verificar ingreso con contraseña incorrecta",
+    "commands": [{
+      "id": "432493b3-29fb-44fa-8a64-cd448d7d2989",
+      "comment": "",
+      "command": "open",
+      "target": "https://homebanking-ema-production.up.railway.app/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d265457-58ef-41d2-b4d9-7585700e0e5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc0331f8-d99e-40b1-8bdb-bf741db6f1b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8b0511-e14f-4df7-af3a-d45828bbd9d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "lorenzonmelba@gmail.com"
+    }, {
+      "id": "abf09066-9660-4e4b-87ad-ec83c099cb1f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "mellll4232"
+    }, {
+      "id": "5c5b9e6d-213e-4684-9872-fad4126219bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac8c3b5a-f688-4afd-af6f-f0f9abfde335",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "be715171-4aff-4fd2-9365-cfa1fc73c726",
+    "name": "Verificar campo contraseña vacío",
+    "commands": [{
+      "id": "4511e96d-d0b3-4068-ac39-a8412d309e8a",
+      "comment": "",
+      "command": "open",
+      "target": "https://homebanking-ema-production.up.railway.app/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13703fb4-9d09-490d-9232-8fd567476fa6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2bb54b8-7274-4bab-bcaa-7a71dcf410b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89031ec6-29dd-47bd-b945-60119539b843",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "lorenzonmelba@gmail.com"
+    }, {
+      "id": "44d7c026-4f60-4531-a1b3-e0fa8b981247",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1601e23-7f34-4371-8388-e97ab2b84334",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56c6602d-0543-4333-a336-9e03db9e9f76",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c1aab40f-3679-4be5-84e2-05d58bc81272",
+    "name": "Verificar ingreso con E-mail incorrecto",
+    "commands": [{
+      "id": "0923deb7-961f-4404-8cbe-8cb63595cadd",
+      "comment": "",
+      "command": "open",
+      "target": "https://homebanking-ema-production.up.railway.app/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47486f6d-5b8e-461c-8c4e-412d08595365",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25d606e5-5fa0-4c50-b982-4e1d805eea91",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f309aca-f707-4444-aa0b-8fc8ff8e5dd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "loremelva@gmail.com"
+    }, {
+      "id": "35fb13cd-70c9-47ee-a7af-ec0e20a1cd40",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "melva123"
+    }, {
+      "id": "be2e9b48-7e55-4007-83a5-dcf4821cf072",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "026f7af9-6b73-491a-b10d-ac5fecf799aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swal-button",
+      "targets": [
+        ["css=.swal-button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e027111-c18a-47de-a959-bd977f5b95cc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.swal-modal",
+      "targets": [
+        ["css=.swal-modal", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b018116-985d-4fe8-a7d5-70c17368a6bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["69759ce6-2d4d-4ee7-80fd-72ea99666608"]
+  }],
+  "urls": ["https://homebanking-ema-production.up.railway.app/index.html"],
+  "plugins": []
+}

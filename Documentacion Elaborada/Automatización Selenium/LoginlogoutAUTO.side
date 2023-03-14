@@ -1,0 +1,137 @@
+{
+  "id": "d2814fee-f80c-485e-897b-06960aa77675",
+  "version": "2.0",
+  "name": "EMA Bank",
+  "url": "https://homebanking-ema-production.up.railway.app/index.html",
+  "tests": [{
+    "id": "9ab73134-49b0-40f2-a82f-a9f7e73ff99e",
+    "name": "Login-out",
+    "commands": [{
+      "id": "5eb4d9d2-4606-4843-84d9-31d9ef0eabce",
+      "comment": "",
+      "command": "open",
+      "target": "https://homebanking-ema-production.up.railway.app/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9a1d956-01d4-4cb4-9f6f-903f004316c2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "452ec44b-88c3-4621-aca3-9ed78f979f09",
+      "comment": "",
+      "command": "click",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "886f0314-d84b-491c-a4d5-ff49d9e0c372",
+      "comment": "",
+      "command": "type",
+      "target": "id=user",
+      "targets": [
+        ["id=user", "id"],
+        ["css=#user", "css:finder"],
+        ["xpath=//input[@id='user']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "lorenzonmelba@gmail.com"
+    }, {
+      "id": "1033bcea-4e3c-4df9-80b2-37a64d84f910",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e3db5d-6370-4ea7-a491-fb751dd582cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "melva123"
+    }, {
+      "id": "6fa22ba7-fb82-45f1-a5c7-758011096e91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "944371d2-38ed-46d5-baca-02632c47ebe7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a:nth-child(5)",
+      "targets": [
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Logout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='app']/header/nav/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[10]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86827a7b-d0bf-4c23-808e-7d4df76ab57a",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5)",
+      "targets": [
+        ["css=a:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Logout')])[2]", "xpath:link"],
+        ["xpath=//div[@id='app']/header/nav/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[10]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a6bd63e-603f-4fc8-9696-bfc324218848",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.group:nth-child(3) > .button",
+      "targets": [
+        ["css=.group:nth-child(3) > .button", "css:finder"],
+        ["xpath=//input[@value='Sign In']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/form/div/div/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "080a8b68-826b-4a15-9142-3fc0bd4251ba",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ab73134-49b0-40f2-a82f-a9f7e73ff99e"]
+  }],
+  "urls": ["https://homebanking-ema-production.up.railway.app/index.html"],
+  "plugins": []
+}
